@@ -167,6 +167,7 @@
         android:id="@+id/nameEditText"
         android:layout_alignTop="@+id/nameLabelTextView"
         android:layout_alignLeft="@+id/spinnerInches"
-        android:layout_alignStart="@+id/spinnerInches" />
+        android:layout_alignStart="@+id/spinnerInches"
+        android:textAlignment="center" />
 
 </RelativeLayout>

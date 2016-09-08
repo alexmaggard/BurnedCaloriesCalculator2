@@ -1,3 +1,5 @@
+//midterm assignment
+
 package com.maggard.burnedcaloriescalculator;
 
 import android.content.SharedPreferences;

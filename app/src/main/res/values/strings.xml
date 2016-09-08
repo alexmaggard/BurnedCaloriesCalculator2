@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BurnedCaloriesCalculator</string>
+    <string name="weight">Weight</string>
+    <string name="miles_ran">Miles Ran:</string>
+    <string name="mi">mi</string>
+    <string name="calories_burned">Calories Burned:</string>
+    <string name="height">Height</string>
+    <string name="bmi">BMI</string>
+    <string name="name">Name</string>
+    <string name="nameInput">Name</string>
+</resources>

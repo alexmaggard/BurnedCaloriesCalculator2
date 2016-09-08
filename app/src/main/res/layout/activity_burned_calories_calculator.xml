@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.maggard.burnedcaloriescalculator.BurnedCaloriesCalculatorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:id="@+id/weightLabelTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/weightEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="0"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/miles_ran"
+        android:id="@+id/milesRanLabelTextView"
+        android:layout_below="@+id/weightEditText"
+        android:layout_marginTop="41dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mi"
+        android:id="@+id/milesLabelTextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/milesRanLabelTextView"
+        android:layout_alignRight="@+id/spinnerInches"
+        android:layout_alignEnd="@+id/spinnerInches" />
+
+    <SeekBar
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_marginRight="78dp"
+        android:layout_marginEnd="78dp"
+        android:indeterminate="true"
+        android:layout_alignBottom="@+id/milesLabelTextView"
+        android:layout_alignRight="@+id/weightEditText"
+        android:layout_alignEnd="@+id/weightEditText"
+        android:max="30"
+        android:progress="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calories_burned"
+        android:id="@+id/caloriesBurnedLabelTextView"
+        android:textSize="20sp"
+        android:layout_below="@+id/milesRanLabelTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/caloriesLabelTextView"
+        android:layout_alignBottom="@+id/caloriesBurnedLabelTextView"
+        android:layout_toRightOf="@+id/caloriesBurnedLabelTextView"
+        android:layout_toEndOf="@+id/caloriesBurnedLabelTextView"
+        android:layout_marginLeft="15dp"
+        android:textSize="20sp"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:id="@+id/heightLabelTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"/>
+
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/spinnerFeet"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/spinnerInches"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar" />
+
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:id="@+id/spinnerInches"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/heightLabelTextView"
+        android:layout_alignRight="@+id/caloriesLabelTextView"
+        android:layout_alignEnd="@+id/caloriesLabelTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi"
+        android:id="@+id/bmiLableTextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"
+        android:layout_alignTop="@+id/bmiTextView"
+        android:layout_alignLeft="@+id/nameLabelTextView"
+        android:layout_alignStart="@+id/nameLabelTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bmiTextView"
+        android:text="00"
+        android:textSize="20sp"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/nameEditText"
+        android:layout_toLeftOf="@+id/spinnerInches"
+        android:layout_toStartOf="@+id/spinnerInches" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:id="@+id/nameLabelTextView"
+        android:layout_marginBottom="55dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/heightLabelTextView"
+        android:layout_alignEnd="@+id/heightLabelTextView"
+        android:textStyle="bold"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/nameInput"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:layout_alignTop="@+id/nameLabelTextView"
+        android:layout_alignLeft="@+id/spinnerInches"
+        android:layout_alignStart="@+id/spinnerInches" />
+
+</RelativeLayout>
